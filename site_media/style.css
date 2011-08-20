@@ -1,0 +1,118 @@
+body {
+	background-color: #FFFFE0;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	}
+
+a:hover{ 
+	text-decoration: underline;
+	color: red;
+	}
+
+
+#nav {
+	float: right;
+	background-color: black ;
+	color: black;
+	padding: 10px;
+	font-family: "adobe-garamond-pro-1", serif;
+}
+
+#nav a{
+	color: white;
+	text-decoration: none;
+	font-family: "adobe-garamond-pro-1", serif;
+	
+}
+
+#nav a:hover{
+	color: red;
+	text-decoration: none;
+	
+}
+
+input {
+	display: block;
+}
+
+h1 {
+    border: 0 none;
+    font-family: "courier new";
+    font-size: 1.3em;
+	font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+h2	{
+	    color: #898989;
+	    font-size: 0.8em;
+	    text-transform: uppercase;
+	}
+
+
+p {
+	font-family: "courier new";
+}
+
+ul.tags, ul.tags li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+
+}
+
+ul.tags a{
+	color: teal;
+}
+
+ul.bookmarks .edit{
+	font-size: 80%;
+}
+
+ul.bookmarks {
+	list-style-type: none;
+	font-family: courier;
+}
+
+ul.bookmarks .title{
+	font-size: 140%;
+	font-family: "courier new";
+}
+
+ul.bookmarks li{
+	padding: 1em 0em;
+}
+
+textarea {
+	display: block;
+}
+
+.comment {
+	margin: 1em;
+	padding: 5px;
+	border: 1px solid #000;
+}
+
+#tag-cloud{
+	text-align: center;
+}
+
+#tag-cloud a {
+	margin: 0 0.2em;
+}
+.tag-cloud-0 { font-size: 100%;}
+.tag-cloud-1 { font-size: 120%;}
+.tag-cloud-2 { font-size: 140%;}
+.tag-cloud-3 { font-size: 160%;}
+.tag-cloud-4 { font-size: 180%;}
+.tag-cloud-5 { font-size: 200%;}
+}

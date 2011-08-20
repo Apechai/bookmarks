@@ -1,0 +1,5 @@
+Hi {{ name }},
+{{ sender }} invited you to join Matt's Bookmarks.
+
+To accept the invitation, please click on the link below:
+{{ link }}
