@@ -3,8 +3,9 @@
 
 <html lang="en">
 <head>
-<title>Django Bookmarks | {% block title %}{% endblock %}
+<title>Items of Curiosity{% block title %}{% endblock %}
 </title>
+
 <link rel="stylesheet" href="/site_media/style.css" type="text/css" />
 <script type="text/javascript" src="/site_media/jquery.js"></script>
 
@@ -12,11 +13,13 @@
 
 </head>
 <body>
+<h1>for the intellectually curious</h1>
 <div id="nav">
+
 		<a href="/">home</a> 
 		<a href="/popular/">popular</a>
 		{% if user.is_authenticated %}
-			<a href="/save/">create bookmark</a>
+			<a href="/save/">post</a>
 			<a href="/search/">search</a>
 			<a href="/user/{{ user.username }}">bookmarks</a>
 			<a href="/logout/">logout</a>

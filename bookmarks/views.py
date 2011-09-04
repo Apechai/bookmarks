@@ -240,9 +240,9 @@ def bookmark_vote_page(request):
 from datetime import datetime, timedelta
 def popular_page(request):
 	today = datetime.today()
-	yesterday = today - timedelta(5)
-	shared_bookmarks = SharedBookmark.objects.filter(date__gt=yesterday)
-	shared_bookmarks = shared_bookmarks.order_by('-votes')[:10]
+	thismonth = today - timedelta(30)
+	shared_bookmarks = SharedBookmark.objects.filter(date__gt=thismonth)
+	shared_bookmarks = shared_bookmarks.order_by('-votes')[:20]
 	variables = RequestContext(request,{
 		'shared_bookmarks': shared_bookmarks
 	})

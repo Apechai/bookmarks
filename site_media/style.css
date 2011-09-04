@@ -1,65 +1,87 @@
+/*Colors - 
+Vichyssoise #EFFFCD
+Hex #DCE9BE
+shadow dirt #555152
+Evening Cloud #2E2633
+Heliotrope #99173C
+
+*/
+
 body {
-	background-color: #FFFFE0;
+	font-family: "Minion Pro", serif;
+	color: #2E2633;
+	background-color: white;
 	font-size: 14px;
 }
 
-a {
+p {
+	font-family: "Minion Pro", serif;
+}
+
+a{
 	text-decoration: none;
-	color: black;
-	font-family: Georgia,'Times New Roman',Times,serif;
+	color: #2E2633;
+	font-family: "Minion Pro";
 	}
 
 a:hover{ 
 	text-decoration: underline;
-	color: red;
+	color: #99173C;
 	}
 
-
-#nav {
-	float: right;
-	background-color: black ;
-	color: black;
-	padding: 10px;
-	font-family: "adobe-garamond-pro-1", serif;
+h1{
+    border: 0 none;
+    font-family: "Minion Pro", serif;
+	color: #99173C;
+    font-size: 1.3em;
+	font-weight: normal;
+    letter-spacing: 2px;
+    padding: 0;
 }
 
+h2	{
+	    color: #2E2633;
+	    font-size: 0.8em;
+	    text-transform: uppercase;
+	}
+	
+input {
+	display: block;
+	}
+	
+#nav{
+	margin:0px;
+	padding: 0px;
+	background-color: #555152;
+	color: #EFFFCD;
+	font-family: "adobe-garamond-pro-1", serif;
+
+	}
+
 #nav a{
-	color: white;
+	font-size: 150%;
+	padding: 0px 20px;
+	text-align: center;
+	color: #EFFFCD;
 	text-decoration: none;
 	font-family: "adobe-garamond-pro-1", serif;
 	
 }
 
 #nav a:hover{
-	color: red;
+	color: white;
 	text-decoration: none;
-	
+	background-color: #99173C;
 }
 
-input {
-	display: block;
+#bookmark{
+	padding: 2px;
+	margin: 5px 0px;
+	background-color: #EFFFCD;
 }
 
-h1 {
-    border: 0 none;
-    font-family: "courier new";
-    font-size: 1.3em;
-	font-weight: normal;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-h2	{
-	    color: #898989;
-	    font-size: 0.8em;
-	    text-transform: uppercase;
-	}
-
-
-p {
-	font-family: "courier new";
+#details, #details a{
+	color: #555152;
 }
 
 ul.tags, ul.tags li {
@@ -71,7 +93,7 @@ ul.tags, ul.tags li {
 }
 
 ul.tags a{
-	color: teal;
+	color: #555152;
 }
 
 ul.bookmarks .edit{
@@ -80,12 +102,14 @@ ul.bookmarks .edit{
 
 ul.bookmarks {
 	list-style-type: none;
-	font-family: courier;
+	font-family: "Minion Pro", serif;
+	margin: 0;
+	padding: 0;
 }
 
 ul.bookmarks .title{
 	font-size: 140%;
-	font-family: "courier new";
+	font-family: "Minion Pro", serif;
 }
 
 ul.bookmarks li{

@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block title %}{{ username }}{% endblock %}
-{% block head %}Bookmarks for {{ username }}{% endblock %}
+{% block head %}{{ username }}'s Articles{% endblock %}
 {% block content %}
 {% ifequal user.username username %}
 	<a href="/friends/{{username}}/">view your friends</a>
