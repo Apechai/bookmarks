@@ -4,6 +4,8 @@ Hex #DCE9BE
 shadow dirt #555152
 Evening Cloud #2E2633
 Heliotrope #99173C
+Title #D8D8D8
+paper #fffae0
 
 */
 
@@ -81,7 +83,7 @@ input {
 }
 
 #details, #details a{
-	color: #555152;
+	color: #C0C0C0;
 }
 
 ul.tags, ul.tags li {
