@@ -39,7 +39,7 @@ h1{
 	font-weight: normal;
     letter-spacing: 2px;
     padding: 0;
-	margin: 2px;
+	margin: 20px 0px 0px 0px;
 }
 
 h2{
@@ -49,7 +49,8 @@ h2{
     font-size: 20px;
 	font-weight: normal;
     letter-spacing: 2px;
-    padding: 0;
+    padding: 0 7px;
+	margin: 10px 0px;
 }
 	
 input {
@@ -90,6 +91,11 @@ input {
 
 #details, #details a{
 	color: #C0C0C0;
+	padding: 5px 0px;
+}
+
+#graphic {
+	padding: 0px 10px;
 }
 
 ul.tags, ul.tags li {
