@@ -1,6 +1,7 @@
 {% if bookmarks %}
 	<ul class="bookmarks">
 	{% for bookmark in bookmarks %}
+		<div id="bookmark">
 		<li><a href = "{{ bookmark.link.url }}" class = "title">
 			{{ bookmark.title }}</a>
 			{% if show_edit %}
@@ -10,7 +11,6 @@
 			
 			<br />
 			{% if show_tags %}
-			Tags:
 				{% if bookmark.tag_set.all %}
 					<ul class="tags">
 						{% for tag in bookmark.tag_set.all %}
@@ -28,6 +28,7 @@
 				class = "username">{{ bookmark.user.username }}</a>
 			{% endif %}
 		</li>
+		</div>
 	{% endfor %}
 	</ul>
 {% else %}

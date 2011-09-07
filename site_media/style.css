@@ -10,20 +10,20 @@ paper #fffae0
 */
 
 body {
-	font-family: "Minion Pro", serif;
+	font-family: "Minion Web", serif;
 	color: #2E2633;
 	background-color: white;
 	font-size: 14px;
 }
 
 p {
-	font-family: "Minion Pro", serif;
+	font-family: "Minion Web", serif;
 }
 
 a{
 	text-decoration: none;
 	color: #2E2633;
-	font-family: "Minion Pro";
+	font-family: "Minion Web";
 	}
 
 a:hover{ 
@@ -33,19 +33,24 @@ a:hover{
 
 h1{
     border: 0 none;
-    font-family: "Minion Pro", serif;
+    font-family: "League Gothic", sans-serif;
+	color: #555152;
+    font-size: 40px;
+	font-weight: normal;
+    letter-spacing: 2px;
+    padding: 0;
+	margin: 2px;
+}
+
+h2{
+    border: 0 none;
+    font-family: "Minion Web", serif;
 	color: #99173C;
-    font-size: 1.3em;
+    font-size: 20px;
 	font-weight: normal;
     letter-spacing: 2px;
     padding: 0;
 }
-
-h2	{
-	    color: #2E2633;
-	    font-size: 0.8em;
-	    text-transform: uppercase;
-	}
 	
 input {
 	display: block;
@@ -53,7 +58,7 @@ input {
 	
 #nav{
 	margin:0px;
-	padding: 0px;
+	padding: 10px;
 	background-color: #555152;
 	color: #EFFFCD;
 	font-family: "adobe-garamond-pro-1", serif;
@@ -61,8 +66,9 @@ input {
 	}
 
 #nav a{
-	font-size: 150%;
-	padding: 0px 20px;
+	font-size: 100%;
+	padding: 5px 20px;
+	text-transform: uppercase;
 	text-align: center;
 	color: #EFFFCD;
 	text-decoration: none;
@@ -79,7 +85,7 @@ input {
 #bookmark{
 	padding: 2px;
 	margin: 5px 0px;
-	background-color: #EFFFCD;
+	background-color: #fafaf0;
 }
 
 #details, #details a{
