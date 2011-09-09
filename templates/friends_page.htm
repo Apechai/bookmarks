@@ -1,13 +1,17 @@
 {% extends "base.htm" %}
 {% block title %}Friends for {{username}}{% endblock %}
-{% block head %}Friends for {{username}}{% endblock %}
+{% block head %}Friend List{% endblock %}
 {% block content %}
-<h2>Friend List</h2>
+<h2></h2>
 {% if friends %}
 	<ul class="friends">
 	{% for friend in friends %}
+		<div id="friend">
 		<li><a href="/user/{{ friend.username }}/">
-			{{ friend.username }}</a></li>
+			{{ friend.username }}</a>
+		</div>
+			</li>
+			
 	{% endfor %}
 	</ul>
 {% else %}

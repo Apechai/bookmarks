@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block title %}{{ username }}{% endblock %}
-{% block head %}{{ username }}'s Articles{% endblock %}
+{% block head %}Your Library of Articles{% endblock %}
 {% block content %}
 {% ifequal user.username username %}
 	<a href="/friends/{{username}}/">view your friends</a>
@@ -13,8 +13,8 @@
 		<a href="/friends/{{user.username}}/">
 		{{username}} is a friend of yours</a>
 	{% else %}
-		<a href="/friend/add/?username={{username}}">
-		add {{username}} to your friends</a>
+		add {{username}} to your friends
+		<a href="/friend/add/?username={{username}}" id="button">Follow</a><br/>
 	{% endif %}
 	<a href="/friends/{{username}}/">
 	view {{username}}'s friends</a>

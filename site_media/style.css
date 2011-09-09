@@ -98,6 +98,21 @@ input {
 	padding: 0px 10px;
 }
 
+#button {
+	background-color: #2E2633;
+	color: white;
+	font-size: 100%;
+	padding: 5px 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #EFFFCD;
+	text-decoration: none;
+	font-family: "adobe-garamond-pro-1", serif;
+}
+#button hover{
+	text-decoration: none;
+}
+
 ul.tags, ul.tags li {
 	display: inline;
 	margin: 0;
@@ -129,6 +144,26 @@ ul.bookmarks .title{
 ul.bookmarks li{
 	padding: 1em 0em;
 }
+
+ul.friends {
+	list-style-type: none;
+	font-family: "Minion Pro", serif;
+	margin: 0;
+	padding: 0;
+}
+
+ul.friends li{
+	padding: 1em 0em;
+}
+
+#friend a{
+	padding: 2px 10px;
+	margin: 5px;
+	background-color: #fafaf0;
+	font-weight: bold;
+	font-size: 140%;
+}
+
 
 textarea {
 	display: block;
