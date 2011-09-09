@@ -3,8 +3,8 @@
 <script type="text/javascript" src="/site_media/bookmark_edit.js"></script>
 {% endblock %}
 
-{% block title %}{{ username }}{% endblock %}
-{% block head %}Your Library of Articles{% endblock %}
+{% block title %}{{username}}'s Library{% endblock %}
+{% block head %}{{username}}'s Library{% endblock %}
 {% block content %}
 {% ifequal user.username username %}
 	<a href="/friends/{{username}}/">view your friends</a>
