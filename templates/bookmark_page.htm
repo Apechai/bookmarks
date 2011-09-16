@@ -1,16 +1,29 @@
 {% extends "base.htm" %}
 {% load comments %}
 {% block title %}Bookmark: {{ shared_bookmark.bookmark.title }}{% endblock %}
-{% block head %}
-<a href="/vote/?id={{shared_bookmark.id}}" class="vote">[+]</a>
-<a href="{{ shared_bookmark.bookmark.link.url }}" class="title">
-	{{ shared_bookmark.bookmark.title }}</a>
-{% endblock %}
+{% block head %}{% endblock %}
 {% block content %}
-Posted by:
-<a href="/user/{{shared_bookmark.bookmark.user.username}}/" class="username">
-	{{ shared_bookmark.bookmark.user.username }}</a>
-<span class="vote-count">Votes:{{ shared_bookmark.votes }}</span>
+<ul class="bookmarks">
+	<div id="bookmark">
+	<li>
+	<a href="{{ shared_bookmark.bookmark.link.url }}" class="title">
+	{{ shared_bookmark.bookmark.title }}</a>
+		</br>
+		<div id="details">
+		By
+		<a href="/user/{{ shared_bookmark.bookmark.user.username }}/"
+		class = "username">
+		{{ shared_bookmark.bookmark.user.username }}</a>
+				<a href="/vote/?id={{shared_bookmark.id }}" class="vote"><img src="/site_media/lightbulb.png" id="graphic"/></a>
+		<span class="vote-count">{{ shared_bookmark.votes }}</span>
+		{% get_comment_count for bookmarks.sharedbookmark shared_bookmark.id as comment_count %}
+		<a href="/bookmark/{{ shared_bookmark.id }}/"><img src="/site_media/comment.png" id="graphic"/></a>{{ comment_count }}
+		</div>
+		</li>
+		</div>
+		</ul>
+
+
 <h2>Comments</h2>
 {% get_comment_count for bookmarks.sharedbookmark shared_bookmark.id as comment_count %}
 {% get_comment_list for bookmarks.sharedbookmark shared_bookmark.id as comment_list %}
